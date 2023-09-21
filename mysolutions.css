@@ -72,3 +72,135 @@
     filter: sepia(60%);
     transform: scale(1.5);
 }
+
+/* esercizio 10 */
+.ex-10-icon{
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* esercizio 11 */
+.ex-11-icon:hover{
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+@keyframes spin{
+    0%{
+       transform: rotate(0deg); 
+    }
+    80%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: scale(0deg);
+    }
+}
+
+/* esercizio 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: left;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes left{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(100px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: right;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes right{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(-100px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+/* esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: left-complete;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes left-complete {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-botton-white{
+    animation-name: right-complete;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes right-complete {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
